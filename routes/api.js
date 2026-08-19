@@ -4,7 +4,7 @@ const router = express.Router();
 const penulisController = require("../Controller/penulisController");
 const komikController = require("../Controller/komikController");
 const genreController = require("../Controller/genreController");
-const authMiddleware = require("../Middleware/authMiddleware");
+const authMiddleware = require("../Middleware/AuthMiddleware");
 
 router.post("/register", penulisController.register);
 router.post("/login", penulisController.login);
