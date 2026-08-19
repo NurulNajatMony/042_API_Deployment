@@ -1,9 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const penulisController = require("../controller/penulisController");
-const komikController = require("../controller/komikController");
-const genreController = require("../controller/genreController");
-const authMiddleware = require("../middleware/authMiddleware");
+
+const penulisController = require("../Controller/penulisController");
+const komikController = require("../Controller/komikController");
+const genreController = require("../Controller/genreController");
+const authMiddleware = require("../Middleware/authMiddleware");
 
 router.post("/register", penulisController.register);
 router.post("/login", penulisController.login);
